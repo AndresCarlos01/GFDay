@@ -1,0 +1,202 @@
+body {
+  background-color: #fdfdfd; /* Light background */
+  font-family: "Arial", sans-serif;
+}
+
+.container {
+  text-align: center;
+  padding: 40px; /* Increased padding for more space */
+}
+
+.animated-heading {
+  font-size: 4em; /* Increase font size */
+  background: linear-gradient(
+    90deg,
+    #e0b3ff,
+    #9a7fd9
+  ); /* Light purple gradient */
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: bounce 1s ease infinite; /* Bouncy animation */
+  margin: 0;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3); /* Add text shadow for depth */
+}
+
+@keyframes bounce {
+  0%,
+  20%,
+  50%,
+  80%,
+  100% {
+    transform: translateY(0);
+  }
+  40% {
+    transform: translateY(-20px);
+  }
+  60% {
+    transform: translateY(-10px);
+  }
+}
+
+.heartfelt-message {
+  background-color: #fff; /* White background */
+  border-radius: 10px; /* Rounded corners */
+  padding: 20px; /* Padding */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Shadow for depth */
+  margin: 20px auto; /* Centering the message */
+  max-width: 600px; /* Max width */
+}
+
+.heartfelt-message h2 {
+  color: #9a7fd9; /* Matching purple color */
+}
+
+#personal-message {
+  font-size: 1.2em; /* Slightly larger font size for readability */
+  line-height: 1.5; /* Line height for better spacing */
+}
+
+.gallery {
+  position: relative;
+  max-width: 600px; /* Adjust as needed */
+  margin: 40px auto; /* Center the gallery and add margin */
+  padding: 20px; /* Add padding around the gallery */
+}
+
+.carousel {
+  position: relative;
+  overflow: hidden; /* Hide overflow */
+  border: 2px solid #9a7fd9; /* Border color */
+  border-radius: 10px; /* Rounded corners */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Shadow for depth */
+  padding: 20px; /* Add padding inside the carousel */
+}
+
+.carousel-images {
+  display: flex; /* Align images in a row */
+  transition: transform 0.5s ease; /* Smooth transition */
+}
+
+.carousel-images img {
+  max-width: 100%; /* Ensure images fit */
+  display: none; /* Hide all images by default */
+  margin: 0 auto; /* Center images */
+}
+
+.carousel-images img.active {
+  display: block; /* Show active image */
+}
+
+button {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: rgba(255, 255, 255, 0.8); /* Background color */
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+  font-size: 24px; /* Increase button size */
+  border-radius: 5px; /* Rounded corners */
+  transition: background-color 0.3s; /* Button hover effect */
+}
+
+button:hover {
+  background-color: rgba(255, 255, 255, 1); /* Change background on hover */
+}
+
+button.prev {
+  left: 10px; /* Position left button */
+}
+
+button.next {
+  right: 10px; /* Position right button */
+}
+
+.love-carousel {
+  margin: 40px 0; /* Space around the carousel */
+}
+
+.carousel {
+  position: relative;
+  border: 2px solid #9a7fd9; /* Border color */
+  border-radius: 10px; /* Rounded corners */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Shadow for depth */
+  padding: 20px; /* Padding inside the carousel */
+  text-align: center; /* Center text */
+  background-color: #fff; /* Background color */
+}
+
+.carousel-text {
+  display: flex; /* Align text in a row */
+  flex-direction: column; /* Stack text vertically */
+  align-items: center; /* Center items */
+  justify-content: center; /* Center vertically */
+  min-height: 200px; /* Minimum height for the carousel */
+  transition: opacity 0.5s ease; /* Smooth transition */
+}
+
+.carousel-text p {
+  display: none; /* Hide all text by default */
+  font-size: 1.5em; /* Increase font size */
+  text-align: center; /* Center text */
+}
+
+.carousel-text p.active {
+  display: block; /* Show active text */
+}
+
+button {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: rgba(255, 255, 255, 0.8); /* Background color */
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+  font-size: 24px; /* Increase button size */
+  border-radius: 5px; /* Rounded corners */
+  transition: background-color 0.3s; /* Button hover effect */
+}
+
+button:hover {
+  background-color: rgba(255, 255, 255, 1); /* Change background on hover */
+}
+
+button.prev {
+  left: 10px; /* Position left button */
+}
+
+button.next {
+  right: 10px; /* Position right button */
+}
+.carousel {
+  position: relative;
+  border: 2px solid #9a7fd9; /* Border color */
+  border-radius: 10px; /* Rounded corners */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Shadow for depth */
+  padding: 20px; /* Add padding inside the carousel */
+  text-align: center; /* Center text */
+}
+
+.carousel-items {
+  display: flex; /* Align items in a row */
+  flex-direction: column; /* Stack items vertically */
+}
+
+.carousel-item {
+  display: none; /* Hide all items by default */
+}
+
+.carousel-item.active {
+  display: block; /* Show active item */
+}
+
+.carousel-item p {
+  font-size: 1.5em; /* Increase font size for text */
+  margin: 0; /* Remove default margin */
+}
+
+.carousel-item img {
+  max-width: 100%; /* Ensure images fit */
+  margin: 10px 0; /* Add margin between text and images */
+}
